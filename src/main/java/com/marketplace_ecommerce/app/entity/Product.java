@@ -9,6 +9,9 @@ import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.*;
 import java.util.Date;
 
+/**
+ * @author j0975
+ */
 @Entity
 @Table(name = "product")
 @Getter

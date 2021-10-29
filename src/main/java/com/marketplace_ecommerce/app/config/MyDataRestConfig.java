@@ -2,6 +2,7 @@ package com.marketplace_ecommerce.app.config;
 
 import com.marketplace_ecommerce.app.entity.Product;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
@@ -14,8 +15,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * @author j0975
+ */
 @Configuration
 public class MyDataRestConfig implements RepositoryRestConfigurer {
+
 
     private EntityManager entityManager;
 
@@ -30,6 +35,7 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
 
         // call an internal helper method to expose the id
         exposeIds(config);
+
 
     }
 

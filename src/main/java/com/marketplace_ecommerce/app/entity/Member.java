@@ -7,6 +7,9 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * @author j0975
+ */
 @Entity
 @Table(name = "member" )
 @Getter
