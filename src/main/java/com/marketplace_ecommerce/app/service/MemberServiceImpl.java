@@ -4,6 +4,9 @@ import com.marketplace_ecommerce.app.dao.MemberRepository;
 import com.marketplace_ecommerce.app.entity.Member;
 import org.springframework.stereotype.Service;
 
+/**
+ * @author j0975
+ */
 @Service
 public class MemberServiceImpl implements MemberService{
 
@@ -13,7 +16,7 @@ public class MemberServiceImpl implements MemberService{
         this.memberRepository = theMemberRepository;
     }
     @Override
-    public Member FindByEmail(String theEmail) {
+    public Member findByEmail(String theEmail) {
         return memberRepository.findByEmail(theEmail);
     }
 

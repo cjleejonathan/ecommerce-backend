@@ -6,7 +6,7 @@ import com.marketplace_ecommerce.app.entity.Member;
  * @author j0975
  */
 public interface MemberService {
-    Member FindByEmail(String theEmail);
+    Member findByEmail(String theEmail);
 
     void save(Member member);
 }
